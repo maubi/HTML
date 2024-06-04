@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Form</title>
+  </head>
+  <body>
+    <h2 align="center">
+      FORM REGISTRASI NASABAH BARU<br />
+      BANK BANGTUT INDONESIA
+    </h2>
+    <form method="post">
+      <table align="center" cellpadding="5">
+        <tr>
+          <td><label for="nama_depan">Nama Depan :</label></td>
+          <td>
+            <input type="text" name="nama_depan" id="nama_depan" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="nama_belakang">Nama Belakang :</label></td>
+          <td>
+            <input
+              type="text"
+              name="nama_belakang"
+              id="nama_belakang"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email :</label></td>
+          <td><input type="email" name="email" id="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password :</label></td>
+          <td>
+            <input type="password" name="password" id="password" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="konfirmasi_password">Konfirmasi Password :</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              name="konfirmasi_password"
+              id="konfirmasi_password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="jkel">Jenis Kelamin :</label></td>
+          <td>
+            <input type="radio" name="jkel" id="laki-laki" value="laki-laki" />
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" name="jkel" id="perempuan" value="perempuan" />
+            <label for="perempuan">Perempuan</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="hobi">Hobi :</label>
+          </td>
+          <td>
+            <input type="checkbox" name="musik" id="musik" />
+            <label for="musik">Music</label>
+            <input type="checkbox" name="traveling" id="traveling" />
+            <label for="traveling">Traveling</label>
+            <input type="checkbox" name="olahraga" id="olahraga" />
+            <label for="olahraga">Olahraga</label>
+            <input type="checkbox" name="mancing" id="mancing" />
+            <label for="mancing">Mancing</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="penghasilan">Sumber Penghasilan :</label></td>
+          <td>
+            <select name="penghasilan" id="penghasilan">
+              <option value="">-- Pilih Sumber Penghasilan --</option>
+              <option value="Penghasilan dari pekerjaan">Penghasilan dari pekerjaan</option>
+              <option value="Penghasilan dari usaha">Penghasilan dari usaha</option>
+              <option value="Penghasilan dari jasa">Penghasilan dari jasa</option>
+              <option value="Penghasilan dari sewa">Penghasilan dari sewa</option>
+           
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="usia">Usia :</label></td>
+          <td>
+            <input type="text" name="usia" id="usia" required /> Tahun
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="alamat">Alamat :</label>
+          </td>
+          <td>
+            <textarea
+              name="alamat"
+              id="alamat"
+              cols="40"
+              rows="10"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="bio">Bio :</label>
+          </td>
+          <td>
+            <textarea
+              name="bio"
+              id="bio"
+              cols="40"
+              rows="10"
+              required
+            ></textarea>
+          </td>
+        </tr>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="Simpan" /> <input type="reset" />
+      </td>
+    </tr>
+      </table>
+    </form>
+  </body>
+</html>

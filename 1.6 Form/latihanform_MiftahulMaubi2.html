@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Form</title>
+  </head>
+  <body>
+    <h1 align="center">Formulir Pendaftaran E-KTP</h1>
+
+    <form name="pendaftaran" method="post">
+      <table align="center" cellpadding="5">
+        <tr>
+          <td width="180"><label for="antrian">Nomor Antrian:</label></td>
+          <td>
+            <input type="text" name="antrian" id="antrian" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="nama">Nama:</label></td>
+          <td><input type="text" name="nama" id="nama" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="ttl">Tempat, Tanggal Lahir:</label></td>
+          <td>
+            <input type="text" name="ttl" id="ttl" required />
+            <input type="date" name="ttl" id="ttl" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="status">Status Pernikahan:</label></td>
+          <td>
+            <select name="status" id="status">
+              <option value="">-- Pilih Status Pernikahan --</option>
+              <option value="belum kawin">Belum Kawin</option>
+              <option value="kawin">Kawin</option>
+              <option value="cerai hidup">Cerai Hidup</option>
+              <option value="cerai mati">Cerai Mati</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="alamat">Alamat:</label>
+          </td>
+          <td>
+            <textarea
+              name="alamat"
+              id="alamat"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="rt">RT/RW:</label></td>
+          <td><input type="text" name="rt" id="rt" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="desa">Desa/Kelurahan:</label></td>
+          <td><input type="text" name="desa" id="desa" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="kecamatan">Kecamatan:</label></td>
+          <td>
+            <input type="text" name="kecamatan" id="kecamatan" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="kabupaten">Kabupaten:</label></td>
+          <td>
+            <input type="text" name="kabupaten" id="kabupaten" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="provinsi">Provinsi:</label></td>
+          <td><input type="text" name="provinsi" id="provinsi" required /></td>
+        </tr>
+        <tr>
+          <td><label for="kodepos">Kode Pos:</label></td>
+          <td><input type="text" name="kodepos" id="kodepos" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="jkel">Jenis Kelamin:</label></td>
+          <td>
+            <input type="radio" name="jkel" id="pria" value="Pria" />
+            <label for="pria">Pria</label>
+            <input type="radio" name="jkel" id="wanita" value="Wanita" />
+            <label for="wanita">Wanita</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="agama">Agama:</label></td>
+          <td>
+            <select name="agama" id="agama">
+              <option value="">-- Pilih Agama --</option>
+              <option value="islam">Islam</option>
+              <option value="kristen">Kristen</option>
+              <option value="katolik">Katolik</option>
+              <option value="buddha">Buddha</option>
+              <option value="khonghucu">Khonghucu</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Daftar" /> <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

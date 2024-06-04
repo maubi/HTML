@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML - Form</title>
+  </head>
+  <body>
+    <h2>Belajar Membuat Form</h2>
+    <form name="registrasi">
+      <label for="nama">Nama :</label>
+      <input type="text" name="nama" id="nama" required /><br />
+      <label for="alamat">Alamat :</label>
+      <input type="text" name="alamat" id="alamat" required /><br />
+      <label for="telepon">Telepon :</label>
+      <input type="text" name="telepon" id="telepon" required /><br />
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" required /><br />
+      <label for="password">Password :</label>
+      <input type="password" name="password" id="passowrd" /><br />
+      <input type="submit" value="Kirim" />
+      <input type="reset" />
+    </form>
+    <br />
+    <form name="pendaftaran">
+      <label for="nama">Nama :</label>
+      <input type="text" name="nama" id="nama" required /><br />
+      <label for="tempat tanggal lahir">Tempat Tanggal Lahir :</label>
+      <input
+        type="text"
+        name="tempat tanggal lahir"
+        id="tempat tanggal lahir"
+        required
+      /><br />
+      <label for="jenis kelamin">Jenis Kelamin :</label>
+      <input
+        type="text"
+        name="jenis kelamin"
+        id="jenis kelamin"
+        required
+      /><br />
+      <label for="no hp">No. HP :</label>
+      <input type="text" name="no hp" id="no hp" required /><br />
+      <label for="pekerjaan">Pekerjaan :</label>
+      <input type="text" name="pekerjaan" id="pekerjaan" required /><br />
+      <label for="hobi">Hobi :</label>
+      <input type="text" name="hobi" id="hobi" required /><br />
+      <input type="submit" value="Kirim" />
+      <input type="reset" />
+      <input
+        type="button"
+        value="Hello"
+        onclick="alert ('Welcome to Mobile Legend')"
+      />
+    </form>
+    <br />
+
+    <h2>Login</h2>
+    <form name="login" method="post">
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" required /><br />
+      <label for="password">Password :</label>
+      <input type="password" name="password" id="password" required /><br />
+      <input type="submit" value="Login" />
+    </form>
+    <br />
+
+    <form name="hobby">
+      <input type="checkbox" name="hobby" id="masak" value="masak" />
+      <label for="masak">Masak</label><br />
+      <input type="checkbox" name="hobby" id="mancing" value="mancing" />
+      <label for="mancing">Mancing</label><br />
+      <input type="checkbox" name="hobby" id="bersepeda" value="bersepeda" />
+      <label for="bersepeda">Bersepeda</label><br />
+      <label>Jenis Kelamin</label>
+      <input type="radio" name="jkel" id="pria" value="pria" />
+      <label for="pria">Pria</label>
+      <input type="radio" name="jkel" id="wanita" value="wanita" />
+      <label for="wanita">Wanita</label><br />
+
+      <label for="tgl">Tanggal Lahir</label>
+      <input type="date" id="tgl" /><br />
+      <label for="telepon">Telepon</label>
+      <input type="tel" name="telepon" id="telepon" value="08" />
+    </form>
+    <form>
+      <label for="jkel">Jenis Kelamin</label>
+      <select name="jkel" id="jkel">
+        <option value="">Silahkan pilih-</option>
+        <option value="pria">Pria</option>
+        <option value="wanita">Wanita</option>
+      </select>
+
+      
+    </form>
+    <br />
+  </body>
+</html>

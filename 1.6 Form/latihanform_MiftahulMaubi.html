@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Form</title>
+  </head>
+  <body>
+    <h1>Formulir Pendaftaran Pelatihan BLK Karawang</h1>
+    <form name="pendaftaran" method="post">
+      <table cellpadding="5">
+        <tr>
+          <td width="250"><label for="nik">NIK:</label></td>
+          <td><input type="text" name="nik" id="nik" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="nama">Nama:</label></td>
+          <td><input type="text" name="nama" id="nama" required /></td>
+        </tr>
+
+        <tr>
+          <td><label for="tempat lahir">Tempat Lahir:</label></td>
+          <td>
+            <input type="text" name="tempat lahir" id="tempat lahir" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="tanggal lahir">Tanggal Lahir:</label></td>
+          <td>
+            <input
+              type="date"
+              name="tanggal lahir"
+              id="tanggal lahir"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="jkel">Jenis Kelamin:</label></td>
+          <td>
+            <input type="radio" name="jkel" id="pria" value="Pria" />
+            <label for="pria">Pria</label>
+            <input type="radio" name="jkel" id="wanita" value="Wanita" />
+            <label for="wanita">Wanita</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="pendidikan terakhir">Pendidikan Terakhir:</label></td>
+          <td>
+            <select name="pendidikan terakhir" id="pendidikan terakhir">
+              <option value="">Pilih Pendidikan</option>
+              <option value="sd">SD</option>
+              <option value="smp">SMP</option>
+              <option value="sma">SMA/SMK</option>
+              <option value="diploma">Diploma</option>
+              <option value="s1">S1</option>
+              <option value="s2">S2</option>
+              <option value="s3">S3</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="alamat">Alamat:</label>
+          </td>
+          <td>
+            <textarea
+              name="alamat"
+              id="alamat"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="no telepon">Nomor Telepon:</label></td>
+          <td>
+            <input
+              type="no telepon"
+              name="no telepon"
+              id="no telepon"
+              value="+62"
+              required
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" name="email" id="email" required /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="alasan">Alasan mengikuti pelatihan:</label>
+          </td>
+          <td>
+            <textarea
+              name="alasan"
+              id="alasan"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="informasi">Tahu informasi pelatihan darimana?:</label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              name="informasi"
+              id="sosmed"
+              value="sosmed"
+            />
+            <label for="sosmed">Sosial Media</label>
+            <input
+              type="checkbox"
+              name="informasi"
+              id="brosur"
+              value="brosur"
+            />
+            <label for="brosur">Brosur</label>
+            <input type="checkbox" name="informasi" id="teman" value="teman" />
+            <label for="teman">Teman/Keluarga</label>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="Daftar" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
